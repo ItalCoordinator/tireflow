@@ -1,0 +1,5 @@
+{
+  "name": "TyreFlow Inventory Intelligence",
+  "description": "Uma plataforma avançada de gestão de inventário para importadoras de pneus, integrando análise de Kardex, Vendas e Estoque com insights gerados por IA para otimização de estoque e movimentação entre locais.",
+  "requestFramePermissions": []
+}
