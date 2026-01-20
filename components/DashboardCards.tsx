@@ -46,9 +46,9 @@ export const DashboardCards: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <Card 
-          title="Capital en Almacén" 
-          value={`R$ ${totalCapital.toLocaleString('es-ES', { maximumFractionDigits: 0 })}`}
+        <Card
+          title="Capital en Almacén"
+          value={`$ ${totalCapital.toLocaleString('en-US', { maximumFractionDigits: 0 })}`}
           subtitle="Valor total del inventario"
           icon={Package}
           colorClass="bg-blue-600 text-white shadow-blue-200"
