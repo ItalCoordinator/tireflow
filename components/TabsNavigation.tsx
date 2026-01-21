@@ -2,13 +2,14 @@
 import React from 'react';
 import { useAnalysis } from './AnalysisContext';
 import { AppTab } from '../types';
-import { LayoutDashboard, FileSpreadsheet, Truck, TrendingUp } from 'lucide-react';
+import { LayoutDashboard, FileSpreadsheet, Truck, TrendingUp, BarChart3 } from 'lucide-react';
 
 export const TabsNavigation: React.FC = () => {
   const { activeTab, setActiveTab } = useAnalysis();
 
   const tabs: { id: AppTab; label: string; icon: any }[] = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'analisis', label: 'Análisis General', icon: BarChart3 },
     { id: 'reportes', label: 'Reportes', icon: FileSpreadsheet },
     { id: 'transferencias', label: 'Transferencias', icon: Truck },
     { id: 'planificacion', label: 'Planificación', icon: TrendingUp },

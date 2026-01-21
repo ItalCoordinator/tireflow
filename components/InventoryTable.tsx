@@ -4,6 +4,7 @@ import { useAnalysis } from './AnalysisContext';
 import { StockStatus } from '../types';
 import { Search, Filter, Download } from 'lucide-react';
 import * as XLSX from 'xlsx';
+import { resolveBrand } from '../utils/brandResolver';
 
 export const InventoryTable: React.FC = () => {
   const { reportItems } = useAnalysis();

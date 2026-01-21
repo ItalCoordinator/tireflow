@@ -104,4 +104,4 @@ export interface ConfigParams {
   periodoAnaliseVendasDias: number;
 }
 
-export type AppTab = 'dashboard' | 'reportes' | 'transferencias' | 'planificacion';
+export type AppTab = 'dashboard' | 'reportes' | 'transferencias' | 'planificacion' | 'analisis';

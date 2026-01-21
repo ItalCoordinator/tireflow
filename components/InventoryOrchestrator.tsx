@@ -10,6 +10,7 @@ import { DashboardCards } from './DashboardCards';
 import { InventoryTable } from './InventoryTable';
 import { TransferList } from './TransferList';
 import { PlanningView } from './PlanningView';
+import { ComprehensiveAnalysis } from './ComprehensiveAnalysis';
 import { AIRecommendation } from './AIRecommendation';
 import { ConfigPanel } from './ConfigPanel';
 import { ColumnMapper } from './ColumnMapper';
@@ -74,6 +75,12 @@ export const InventoryOrchestrator: React.FC = () => {
               <DashboardCards />
               <AIRecommendation />
               <InventoryTable />
+            </div>
+          )}
+
+          {activeTab === 'analisis' && (
+            <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <ComprehensiveAnalysis />
             </div>
           )}
 
